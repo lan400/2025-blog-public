@@ -32,18 +32,48 @@ export function signAppJwt(appId: string, privateKeyPem: string): string {
 }
 
 export async function getInstallationId(jwt: string, owner: string, repo: string): Promise<number> {
-	const res = await fetch(`${GH_API}/repos/${owner}/${repo}/installation`, {
-		headers: {
-			Authorization: `Bearer ${jwt}`,
-			Accept: 'application/vnd.github+json',
-			'X-GitHub-Api-Version': '2022-11-28'
+	try {
+		const url = `${GH_API}/repos/${owner}/${repo}/installation`
+		console.log('Fetching:', url)  // 调试用
+		
+		const res = await fetch(url, {
+			headers: {
+				Authorization: `Bearer ${jwt}`,
+				Accept: 'application/vnd.github+json',
+				'X-GitHub-Api-Version': '2022-11-28'
+			}
+		})
+		
+		// 更详细的错误信息
+		console.log('Response status:', res.status)
+		console.log('Response headers:', res.headers)
+		
+		if (res.status === 401) {
+			console.error('401 Unauthorized - JWT可能无效或过期')
+			handle401Error()
 		}
-	})
-	if (res.status === 401) handle401Error()
-	if (res.status === 422) handle422Error()
-	if (!res.ok) throw new Error(`installation lookup failed: ${res.status}`)
-	const data = await res.json()
-	return data.id
+		if (res.status === 404) {
+			console.error('404 Not Found - 仓库不存在或应用未安装')
+			throw new Error(`GitHub App is not installed on ${owner}/${repo}`)
+		}
+		if (res.status === 422) {
+			handle422Error()
+		}
+		
+		if (!res.ok) {
+			const errorText = await res.text()
+			console.error('Error response:', errorText)
+			throw new Error(`installation lookup failed: ${res.status} - ${errorText}`)
+		}
+		
+		const data = await res.json()
+		console.log('Installation data:', data)
+		return data.id
+		
+	} catch (error) {
+		console.error('getInstallationId failed:', error)
+		throw error
+	}
 }
 
 export async function createInstallationToken(jwt: string, installationId: number): Promise<string> {
