@@ -117,6 +117,13 @@ export async function getAuthToken(): Promise<string> {
 		throw new Error('需要先设置私钥。请使用 useAuth().setPrivateKey()')
 	}
 
+	console.log('[GitHub Auth] Effective config', {
+		owner: GITHUB_CONFIG.OWNER,
+		repo: GITHUB_CONFIG.REPO,
+		branch: GITHUB_CONFIG.BRANCH,
+		appId: GITHUB_CONFIG.APP_ID
+	})
+
 	toast.info('正在签发 JWT...')
 	const jwt = signAppJwt(GITHUB_CONFIG.APP_ID, privateKey)
 
