@@ -65,6 +65,20 @@
 			"value": "836540206@qq.com",
 			"label": "",
 			"order": 1
+		},
+		{
+			"id": "button-1775468690943",
+			"type": "link",
+			"value": "https://blog.csdn.net/weixin_70523815?spm=1000.2115.3001.5343",
+			"label": "CSDN",
+			"order": 4
+		},
+		{
+			"id": "button-1775468702022",
+			"type": "link",
+			"value": "",
+			"label": "",
+			"order": 5
 		}
 	],
 	"clockShowSeconds": false,
