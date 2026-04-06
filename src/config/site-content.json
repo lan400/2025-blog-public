@@ -30,9 +30,13 @@
 		{
 			"id": "a46372ff45bc5524",
 			"url": "/images/art/a46372ff45bc5524.jpg"
+		},
+		{
+			"id": "31111e1b76f357e2",
+			"url": "/images/art/31111e1b76f357e2.jpg"
 		}
 	],
-	"currentArtImageId": "a46372ff45bc5524",
+	"currentArtImageId": "31111e1b76f357e2",
 	"backgroundImages": [
 		{
 			"id": "",
@@ -44,7 +48,7 @@
 		{
 			"id": "github",
 			"type": "github",
-			"value": "https://github.com/yysuni",
+			"value": "https://github.com/lan400",
 			"label": "Github",
 			"order": 3
 		},
@@ -58,7 +62,7 @@
 		{
 			"id": "email",
 			"type": "email",
-			"value": "yysuni1001@gmail.com",
+			"value": "836540206@qq.com",
 			"label": "",
 			"order": 1
 		}
