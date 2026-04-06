@@ -9,59 +9,6 @@
     "category": ""
   },
   {
-    "slug": "rendering-spline",
-    "title": "渲染类似 Spline 的清新风格",
-    "tags": [
-      "Threejs"
-    ],
-    "date": "2026-03-30T16:30",
-    "summary": "渲染真实不容易啊",
-    "cover": "/blogs/rendering-spline/5f7521ad156f2439.webp",
-    "hidden": false,
-    "category": ""
-  },
-  {
-    "slug": "draggable-card-3",
-    "title": "3D吊牌 - 优化实现",
-    "tags": [
-      "Threejs",
-      "3D"
-    ],
-    "date": "2026-03-25T21:35",
-    "summary": "我自己的实现",
-    "cover": "/blogs/draggable-card-3/da2d4d8351b3bef8.webp",
-    "hidden": false,
-    "category": ""
-  },
-  {
-    "slug": "draggable-card-2",
-    "title": "物理吊牌笔记 - 约束",
-    "tags": [
-      "Threejs",
-      "3D",
-      "笔记"
-    ],
-    "date": "2026-03-24T17:04",
-    "summary": "Threejs 物理效果，吊牌实现笔记，线条部分",
-    "cover": "/blogs/draggable-card-2/5aef3921b3a5a761.webp",
-    "hidden": false,
-    "category": ""
-  },
-  {
-    "slug": "draggable-card",
-    "title": "物理吊牌笔记 - 抓取",
-    "tags": [
-      "Threejs",
-      "3D",
-      "笔记"
-    ],
-    "date": "2026-03-23T16:59",
-    "summary": "Threejs 物理效果，吊牌实现笔记",
-    "cover": "/blogs/draggable-card/5aef3921b3a5a761.webp",
-    "hidden": false,
-    "category": ""
-  },
-  {
     "slug": "cursor-keyboard",
     "title": "Cursor 快捷键",
     "tags": [
@@ -70,33 +17,6 @@
     "date": "2026-03-06T09:47",
     "summary": "常用、便捷操作",
     "cover": "/blogs/cursor-keyboard/b8e0790993a85d17.jpg",
-    "hidden": false,
-    "category": ""
-  },
-  {
-    "slug": "blender-scene-note",
-    "title": "Blender场景建模笔记",
-    "tags": [
-      "blender",
-      "学习"
-    ],
-    "date": "2026-03-04T16:25",
-    "summary": "blender 笔记",
-    "cover": "/blogs/blender-scene-note/32c234f6bf0b8b9b.webp",
-    "hidden": false,
-    "category": ""
-  },
-  {
-    "slug": "live2d-note",
-    "title": "做一个 Live2D",
-    "tags": [
-      "学习",
-      "Live2D",
-      "笔记"
-    ],
-    "date": "2026-02-28T14:40",
-    "summary": "记录 Live2D 软件心得",
-    "cover": "/blogs/live2d-note/bab67a1255a0d0da.webp",
     "hidden": false,
     "category": ""
   },
