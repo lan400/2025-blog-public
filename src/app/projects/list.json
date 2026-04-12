@@ -3,12 +3,11 @@
 		"name": "AIflow-studio",
 		"year": 2026,
 		"image": "/images/project/e24fbb29d81aeccf.jpg",
-		"url": "https://github.com/lan400/aiflow-studio",
+		"url": "",
 		"description": "aiflow studio",
 		"tags": [
 			"React"
 		],
-		"github": "https://github.com/lan400/aiflow-studio",
-		"npm": "无"
+		"github": "https://github.com/Solene200/aiflow-studio"
 	}
 ]
