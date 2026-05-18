@@ -4,7 +4,9 @@
     "设计模式",
     "创建blog网站"
   ],
-  "date": "2023-05-07",
-  "summary": "设计模式在长期的开发过程当中，会慢慢显得更加重要。掌握好这些设计模式，对日后的项目工作有很大帮助。",
-  "cover": "/blogs/design-patterns-react/836ca6119fb23330.jpg"
+  "date": "2026-02-07T08:00",
+  "summary": "React种的设计模式",
+  "cover": "/blogs/design-patterns-react/836ca6119fb23330.jpg",
+  "hidden": false,
+  "category": ""
 }
