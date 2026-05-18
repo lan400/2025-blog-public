@@ -44,15 +44,5 @@
     "date": "2025-02-27",
     "summary": "应对 Google、Twitter、Discord、Telegram ，网站开发中 SEO 应该注意的地方",
     "cover": "/blogs/seo-summary/c6885851c084aa3f.png"
-  },
-  {
-    "slug": "pnpm-upgrade",
-    "title": "PNPM 升级",
-    "tags": [
-      "笔记"
-    ],
-    "date": "2025-02-24",
-    "summary": "不同设备有不同升级方式，容易报错",
-    "cover": "/blogs/pnpm-upgrade/d3d0d5fee572546d.jpg"
   }
 ]
